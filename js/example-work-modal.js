@@ -4,7 +4,7 @@ class ExampleWorkModal extends React.Component {
 
   render() {
     let example = this.props.example;
-    let modalClass = this.props.open ? 'modal--open' : 'modal--closed'
+    let modalClass = this.props.open ? 'modal--open' : 'modal--closed';
 
     return (
       <div className={"background--niceGreen " + modalClass}>

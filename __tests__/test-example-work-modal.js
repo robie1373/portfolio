@@ -16,10 +16,9 @@ const myExample =   {
 describe("ExampleWorkModal Component", () => {
   let component = shallow(<ExampleWorkModal example={myExample} open={false}/>);
   let mockCloseModalFn = jest.fn();
-
   let openComponent = shallow(<ExampleWorkModal example={myExample} open={true} closeModal={ mockCloseModalFn }/>);
-
   let anchors = component.find("a");
+
   it("should contain a single 'a' element", () => {
     expect(anchors.length).toEqual(1);
   });
